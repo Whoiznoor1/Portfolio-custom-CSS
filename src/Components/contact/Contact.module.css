@@ -1,0 +1,151 @@
+
+
+.contactSec{
+    min-height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 48px 1rem;
+}
+
+.headingSec{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.heading{
+    font-size: 36px;
+    margin-top: 96px;
+    color: #F87171;
+}
+
+.msg{
+    font-size: 14px;
+    font-family: monospace;
+    margin-top: 1rem;
+}
+.dot{
+    text-align: center;
+    font-size: 1.7rem;
+    color:#F87171;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    max-width: 28rem;
+    width: 100%;
+}
+
+.ul{  
+    text-align: center;
+}
+
+.li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.link{
+    display: flex;
+    align-items: center;
+    margin-left: 8px;
+    font-size:18px;
+  }
+  .email{
+    color: #93C5FD;
+  }
+  .linkedin{
+    color: #2563EB;
+  }
+  .git{
+    color: #475569;
+  }
+  .npm{
+    color: #DC2626;
+  }
+  
+  .text{
+    color: #9CA3AF;
+    font-size: 12px;
+    margin-top: 8px;
+  }
+
+
+  @media screen and (min-width:640px) {
+    .link{
+      font-size: 20px;
+    }
+    .text{
+        font-size: 14px;
+    }
+  }
+
+
+  @media screen and (min-width:768px) {
+    .link{
+      font-size: 1.5rem;
+    }
+    .text{
+        font-size: 1rem;
+    }
+  }
+
+
+@media screen and (min-width:640px){
+    .contactSec{
+        padding: 48px 2rem ;
+    }
+    .heading{
+        font-size: 3rem;
+        margin-top: 128px;
+    }
+    .msg{
+        font-size: 1rem;
+    }
+    .dot{
+        font-size: 4.5rem; 
+        line-height: 1;
+    }
+}
+
+
+@media screen and (min-width:768px){
+    .contactSec{
+        padding: 48px 4rem ;
+    }
+    .heading{
+        font-size: 60px;
+    }
+    .msg{
+        font-size: 18px;
+    }
+    .dot{
+        font-size: 6rem;
+        line-height: 1;
+    }
+    .main{
+        max-width: 32rem; 
+    }
+}
+
+
+@media screen and (min-width:1024px){
+    .contactSec{
+        padding: 48px 8rem ;
+    }
+    .heading{
+        font-size: 4.5rem;
+    }
+    .dot{
+        font-size: 3rem;
+        line-height: 1.2;
+    }
+    .main{
+        max-width: 36rem;
+    }
+}

@@ -1,0 +1,172 @@
+.heroSec{
+    /* "min-h-screen bg-black text-white flex flex-col md:flex-row items-center" */
+    min-height: 100vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* "flex flex-col justify-center px-8 py-10 md:py-20 md:px-20 md:w-1/2" */
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px 32px;
+}
+/* "font-mono font-extrabold text-2xl sm:text-3xl md:text-4xl" */
+
+.intro{
+    font-family: monospace;
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+
+/* "font-mono font-extrabold text-4xl sm:text-5xl md:text-6xl mt-2" */
+.typeWritter{
+    font-family: monospace;
+    font-size: 2.3rem;
+}
+
+
+
+.paraCont{
+    font-size: 20px;
+    
+    margin-top: 1rem;
+    font-weight: 100;
+}
+
+.br{
+    display: none;
+}
+
+.pdfBtn{
+    margin-top: 2rem;
+}
+
+
+
+.btn {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    overflow: hidden;
+    font-size: 1rem;
+    font-weight: 400;
+    color: white;
+    border-radius: 0.5rem; 
+    background: linear-gradient(to bottom right, #ec4899, #fb923c); 
+    text-decoration: none; 
+  }
+
+  .btn:hover {
+    color: black;
+  }
+  
+  .btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(236, 72, 153, 0.5); 
+  }
+
+  
+  .span{
+    position: relative;
+    padding: 0.5rem 1rem;
+     background-color: #111827; 
+    border-radius: 0.375rem; 
+    transition: all 0.075s ease-in; 
+  }
+  .span:hover{
+    background-color: transparent;
+  }
+
+  /* "flex justify-center items-center md:w-1/2 mt-10 md:mt-0 p-4" */
+  .imgCont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:40px ;
+    padding: 1rem;
+  }
+
+  .img{
+    /* "w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg h-auto" */
+    width: 100%;
+    max-width: 20rem;
+    height: auto;
+  }
+
+@media screen and (min-width:640px) {
+    .intro{
+        font-size: 30px;
+    }
+    .btn{
+        font-size: 16px;
+    }
+    .typeWritter{
+        font-size: 3rem;
+    }
+    .paraCont{
+        font-size: 1.5rem;
+    }
+    .span{
+        padding: 10px 24px;
+    }
+    .img{
+        max-width: 24rem;
+    }
+}
+
+
+@media screen and (min-width:768px) {
+    .heroSec{
+        flex-direction: row;
+    }
+    .main{
+        padding: 80px;
+        width: 50%;
+    }
+    .btn{
+        font-size: 18px;
+    }
+    .intro{
+        font-size: 36px;
+    }
+    .typeWritter{
+        font-size: 60px;
+    }
+    .paraCont{
+        font-size: 2.25rem;
+        margin-top: 1.5rem;
+    }
+    .br{
+        display: block;
+    }
+    .pdfBtn{
+        margin-top: 3rem;
+    }
+    .span{
+        padding: 12px 32px;
+    }
+    .imgCont{
+        margin-top: 0;
+        width: 50%;
+    }
+    .img{
+        max-width: 28rem;
+    }
+}
+
+@media  screen and (min-width:1024px) {
+    .btn{
+        font-size: 20px;
+    }
+    .img{
+        max-width: 32rem;
+    }
+}

@@ -1,42 +1,36 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Rancho&family=Sarina&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Itim&family=Rancho&family=Sarina&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Coiny&family=Great+Vibes&family=Itim&family=Rancho&family=Sarina&display=swap");
+
+.sarina-regular {                                  
+  font-family: "Sarina", cursive;                
+  font-weight: 400;
+  font-style: normal;
+}
+.itim-regular {
+  font-family: "Itim", cursive;
+  font-weight: 400;
+  font-style: normal;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.coiny-regular {
+  font-family: "Coiny", system-ui;
+  font-weight: 400;
+  font-style: normal;
 }
 
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-* {
-  box-sizing: border-box;
+*{
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
-a {
-  color: inherit;
+ul{
+  list-style: none;
+}
+
+a{
   text-decoration: none;
+  color: inherit;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-}

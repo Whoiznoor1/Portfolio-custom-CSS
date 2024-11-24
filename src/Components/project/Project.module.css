@@ -1,0 +1,128 @@
+/* "min-h-screen bg-black text-white flex flex-col items-center py-10" */
+
+.projectSec{
+    min-height: 100vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0;
+}
+
+/* "text-center text-4xl sm:text-5xl lg:text-6xl coiny-regular text-white mb-4" */
+.projectHeading{
+    text-align: center;
+    font-size: 36px;
+    color: white;
+    /* margin-bottom: 1rem; */
+}
+/* "text-center text-md sm:text-lg md:text-xl text-red-400 font-mono mb-4" */
+.work{
+    text-align: center;
+    font-size: 14px;
+    color: #F87171;
+    font-family: monospace;
+    /* margin-bottom: 1rem; */
+}
+/* "text-center text-6xl sm:text-7xl md:text-8xl lg:text-9xl text-white mb-8" */
+.dot{
+    text-align: center;
+    font-size: 1.7rem;
+    color: white;
+    margin-bottom: 2rem;
+}
+.container{
+    /* "w-full px-4 sm:px-8 lg:px-16 xl:px-32" */
+    width: 100%;
+    padding: 0 1rem;
+}
+.main{
+    /* "grid grid-cols-1 sm:grid-cols-2 gap-8" */
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 32px;
+}
+/* "bg-gray-800 p-6 rounded-lg shadow-lg */
+.imgCont{
+    background: #1F2937;
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+/* "w-full h-auto object-cover rounded-lg" */
+.img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: .5rem;
+}
+/* "mt-4 text-white itim-regular text-sm sm:text-base lg:text-lg" */
+.para{
+    margin-top:1rem;
+    color: white;
+    font-size: 14px;
+}
+.link{
+    /* text-blue-300 mt-4 inline-block text-sm sm:text-base" */
+    color: #75C5FD;
+    margin-top: 1rem;
+    display: inline-block;
+    font-size: 14px;
+}
+@media screen and (min-width:640px){
+    .projectHeading{
+        font-size: 3rem;
+    }
+    .work{
+        font-size: 18px;
+    }
+    .dot{
+        font-size: 4.5rem; 
+        line-height: 1;
+    }
+    .container{
+        padding: 0 2rem;
+    }
+    .main{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .para{
+        font-size: 1rem;
+    }
+    .link{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width:768px){
+    .work{
+        font-size: 20px;
+    }
+    .dot{
+        font-size: 6rem; 
+        line-height: 1;
+    }
+}
+
+@media screen and (min-width:1024px){
+    .projectHeading{
+        font-size: 60px;
+    }
+    .dot{
+        font-size: 3rem;
+        line-height: 1.2;
+    }
+    .container{
+        padding: 0 4rem;
+    }
+    .para{
+        font-size: 18px;
+    }
+}
+
+
+@media screen and (min-width:1280px){
+    .container{
+        padding: 0 8rem;
+    }
+}
